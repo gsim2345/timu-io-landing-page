@@ -26,6 +26,8 @@
     <script src="https://use.fontawesome.com/31e4b5bbb7.js"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
     <style>
     body {
@@ -43,8 +45,15 @@
     }
 
     #home {
-      font-size: 20px;
+      font-size: 20px !important ;
     }
+
+    .changeColor {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+
 
     #firstPage {
       background-color: #4d90fe;
@@ -261,10 +270,10 @@
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
-            <li class="navbar-item active" id="home"><a href="#firstPage">Timu.io</a></li>
-            <li class="navbar-item"><a href="#quotes">About</a></li>
-            <li class="navbar-item"><a href="#signUpForm">Contact</a></li>
-            <li class="navbar-item"><a href="#news">News</a></li>
+            <li class="navbar-item active"><a href="#firstPage" id="home" class="changeColor">Timu.io</a></li>
+            <li class="navbar-item"><a href="#quotes" class="changeColor">About</a></li>
+            <li class="navbar-item"><a href="#signUpForm" class="changeColor">Contact</a></li>
+            <li class="navbar-item"><a href="#news" class="changeColor">News</a></li>
           </ul>
 
 
@@ -408,6 +417,17 @@ $('.navbar-item').on('click',function(){
 //Scrollspy
 $('body').scrollspy({ target: '.navbar' });
 
+// Waypoint
+var waypoint = new Waypoint({
+  element: document.getElementById('quotes'),
+  handler: function() {
+    var x = document.getElementsByClassName("changeColor");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.color = "grey";
+    }
+  }
+})
 </script>
 
 </body>
