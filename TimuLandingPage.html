@@ -417,17 +417,24 @@ $('.navbar-item').on('click',function(){
 //Scrollspy
 $('body').scrollspy({ target: '.navbar' });
 
-// Waypoint
-var waypoint = new Waypoint({
-  element: document.getElementById('quotes'),
-  handler: function() {
-    var x = document.getElementsByClassName("changeColor");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.color = "grey";
-    }
-  }
-})
+// Waypoints
+  $('#quotes').waypoint(function(direction) {
+   if (direction == "down") {
+     var x = document.getElementsByClassName("changeColor");
+     var i;
+     for (i = 0; i < x.length; i++) {
+          x[i].style.color = "grey";
+      }
+    } else if (direction == "up") {
+      var x = document.getElementsByClassName("changeColor");
+      var i;
+      for (i = 0; i < x.length; i++) {
+           x[i].style.color = "white";
+       }
+    } 
+
+  });
+
 </script>
 
 </body>
