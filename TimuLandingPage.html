@@ -48,7 +48,7 @@
 
     }
 
-    #home {
+    #homeLink {
       font-size: 20px !important ;
     }
 
@@ -58,12 +58,11 @@
     }
 
 
-
-    #firstPage {
+    #home {
       background-color: #4d90fe;
       width: 100%;
-
     }
+
 
     #theBigT {
       font-size: 200px;
@@ -174,11 +173,11 @@
     /* Colors */
       .corner-ribbon.orange{background: #f4b400}
 
-      #quotes {
+      #about {
         font-style: italic;
       }
 
-      #quotes h1 {
+      #about h1 {
         font-weight: 500;
         margin-top: 75px;
         font-size: 50px;
@@ -295,8 +294,8 @@
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
-            <li class="navbar-item active"><a href="#firstPage" id="home" class="changeColor">Timu.io</a></li>
-            <li class="navbar-item"><a href="#quotes" class="changeColor">About</a></li>
+            <li class="navbar-item active"><a href="#home" id="homeLink" class="changeColor">Timu.io</a></li>
+            <li class="navbar-item"><a href="#about" class="changeColor">About</a></li>
             <li class="navbar-item"><a href="#signUpForm" class="changeColor">Contact</a></li>
             <li class="navbar-item"><a href="#news" class="changeColor">News</a></li>
           </ul>
@@ -310,7 +309,7 @@
     <!-- Navbar ends -->
 
     <!-- First page starts here -->
-    <div id="firstPage" class="container pageContainer">
+    <div id="home" class="container pageContainer">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <!-- <p id="theBigTIcon"><i class="material-icons">title</i></p> -->
@@ -318,7 +317,7 @@
           <h1 id="Timu" class="text-center bold">TIMU.IO<h1>
           <p  id="description" class="text-center">Your up to date competence profile with zero day knowledge on co-workers without the social pressure.</p>
         <!--  <p id="findOut"class="text-center">Find out more</p> -->
-          <p class="text-center"><a id="downLink"  href="#quotes"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
+          <p class="text-center"><a id="downLink"  href="#about"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
         </div>
       </div>
 
@@ -327,7 +326,7 @@
     <!-- First page ends -->
 
     <!-- Second page starts here -->
-      <div id="quotes" class="container pageContainer">
+      <div id="about" class="container pageContainer">
 
       <div class="row">
         <h1 class="title">"I am ...</h1>
@@ -451,9 +450,9 @@ $('.navbar-item').on('click',function(){
 //Scrollspy
 $('body').scrollspy({ target: '.navbar' });
 
-// Waypoints
-  $('#quotes').waypoint(function(direction) {
-   if (direction == "down") {
+//Waypoints
+  $('#about').waypoint(function(direction) {
+  if (direction == "down") {
      var x = document.getElementsByClassName("changeColor");
      var i;
      for (i = 0; i < x.length; i++) {
@@ -466,8 +465,9 @@ $('body').scrollspy({ target: '.navbar' });
            x[i].style.color = "white";
        }
     }
-
   });
+
+
 
 </script>
 
