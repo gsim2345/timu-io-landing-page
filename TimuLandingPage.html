@@ -451,24 +451,7 @@ $('.navbar-item').on('click',function(){
 $('body').scrollspy({ target: '.navbar' });
 
 //Waypoints
-  //$('#about').waypoint(function(direction) {
-  //if (direction == "down") {
-  //   var x = document.getElementsByClassName("changeColor");
-  //   var i;
-  //   for (i = 0; i < x.length; i++) {
-  //        x[i].style.color = "grey";
-  //    }
-  //  } else if (direction == "up") {
-  //    var x = document.getElementsByClassName("changeColor");
-  //    var i;
-  //    for (i = 0; i < x.length; i++) {
-  //         x[i].style.color = "white";
-  //     }
-  //  }
-  //});
-
-  var $about = $("#about");
-  $about.waypoint(function(direction) {
+$("#about").waypoint(function(direction) {
     if (direction == "down") {
        var x = document.getElementsByClassName("changeColor");
        var i;
