@@ -26,10 +26,14 @@
     <script src="https://use.fontawesome.com/31e4b5bbb7.js"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css">
+
     <!-- Waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
     <style>
+
+
     body {
       position: relative;
     }
@@ -64,23 +68,18 @@
     #theBigT {
       font-size: 200px;
       color: white;
-      margin-top: 130px;
+      margin-top: 80px;
     }
 
     #theBigTIcon {
       text-align: center;
     }
 
-    .material-icons {
-      font-size: 240px;
-      color: white;
-      margin-top: 130px;
-    }
 
     #Timu {
       font-size: 100px;
       color: white;
-      margin-top: 25px;
+      margin-top: 20px;
       font-family: Roboto;
       font-weight: 400;
     }
@@ -89,8 +88,23 @@
       color: white;
       font-family: Roboto;
       font-size: 32px;
+      margin-top: 40px;
+    }
+
+    #findOut {
+      color: white;
+      font-family: Roboto;
+      font-size: 20px;
       margin-top: 50px;
     }
+
+    #downLink {
+      color: white;
+
+      font-size: 30px;
+      margin-top: 25px;
+    }
+
 
 
 
@@ -191,7 +205,7 @@
 
       #news h1 {
         font-weight: 500;
-        margin-top: 75px;
+        margin-top: 90px;
         font-size: 50px;
         font-style: italic;
         margin-left: 20px;
@@ -224,13 +238,24 @@
 
       }
 
-      .moreNewsLink {
-        font-size: 30px;
-        font-weight: 500;
+
+
+      .social-media-buttons {
+        margin-top: 150px;
       }
 
-      .bigLink {
-        margin-top: 50px;
+      .social-media-buttons li {
+        padding-right: 5px;
+        text-align: center;
+        display: inline;
+        margin-left: 15px;
+        margin-right: 15px;
+
+      }
+
+      .social-media-buttons li i {
+        font-size: 60px;
+        color: white;
       }
 
       footer {
@@ -239,7 +264,7 @@
 
       footer p {
         color: white;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
         margin: 12px;
       }
@@ -287,13 +312,16 @@
     <!-- First page starts here -->
     <div id="firstPage" class="container pageContainer">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2" id="topRow">
+        <div class="col-md-8 col-md-offset-2">
           <!-- <p id="theBigTIcon"><i class="material-icons">title</i></p> -->
           <h1 id="theBigT" class="text-center">T</h1>
           <h1 id="Timu" class="text-center bold">TIMU.IO<h1>
           <p  id="description" class="text-center">Your up to date competence profile with zero day knowledge on co-workers without the social pressure.</p>
+        <!--  <p id="findOut"class="text-center">Find out more</p> -->
+          <p class="text-center"><a id="downLink"  href="#quotes"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
         </div>
       </div>
+
     </div>
 
     <!-- First page ends -->
@@ -381,8 +409,14 @@
           </div>
         </div>
     </div>
-    <div class="row text-center bigLink">
-      <a href="#" class="moreNewsLink">Earlier news...</a>
+    <div class="row text-center">
+      <ul class="social-media-buttons text-center">
+          <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://medium.com/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
   </div>
   <!-- News page ends here -->
@@ -431,7 +465,7 @@ $('body').scrollspy({ target: '.navbar' });
       for (i = 0; i < x.length; i++) {
            x[i].style.color = "white";
        }
-    } 
+    }
 
   });
 
