@@ -202,6 +202,18 @@
 
       }
 
+      legend {
+        margin-left: -10px;
+        margin-top: 45px;
+
+      }
+
+      .well {
+        margin: 300px;
+        margin-top: 150px;
+
+      }
+
       #news h1 {
         font-weight: 500;
         margin-top: 90px;
@@ -299,9 +311,6 @@
             <li class="navbar-item"><a href="#signUpForm" class="changeColor">Contact</a></li>
             <li class="navbar-item"><a href="#news" class="changeColor">News</a></li>
           </ul>
-
-
-
         </div>
       </div>
     </div>
@@ -320,9 +329,7 @@
           <p class="text-center"><a id="downLink"  href="#about"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
         </div>
       </div>
-
     </div>
-
     <!-- First page ends -->
 
     <!-- Second page starts here -->
@@ -358,22 +365,55 @@
 
     <!-- Contact page starts here -->
     <div id="signUpForm" class="container pageContainer">
-      <!-- Begin MailChimp Signup Form -->
+
+      <!-- Begin MailChimp Signup Form
 
       <div id="mc_embed_signup">
       <form action="//timu.us1.list-manage.com/subscribe/post?u=275d09e73fd9d5b28ef7c67e8&amp;id=77ee1bb6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
          <div id="mc_embed_signup_scroll">
 
-      	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_275d09e73fd9d5b28ef7c67e8_77ee1bb6e9" tabindex="-1" value=""></div>
-         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!- real people should not fill this in and expect good things - do not remove this or risk form bot signups->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_275d09e73fd9d5b28ef7c67e8_77ee1bb6e9" tabindex="-1" value="">
+            </div>
+            <div class="clear">
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
          </div>
       </form>
       </div>
 
-      <!--End mc_embed_signup-->
+      <!- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form class="form-horizontal validate" action="//timu.us1.list-manage.com/subscribe/post?u=275d09e73fd9d5b28ef7c67e8&amp;id=77ee1bb6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <fieldset>
+            <div class="well">
 
+
+              <div class="col-md-10 col-md-offset-2">
+                <legend>Subscribe to our services</legend>
+              </div>
+              <div id="mc_embed_signup_scroll">
+                <div class="form-group">
+                  <!-- <label for="inputEmail" class="col-md-2 control-label">Email</label>-->
+                  <div class="col-md-8 col-md-offset-2" aria-hidden="true">
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="b_275d09e73fd9d5b28ef7c67e8_77ee1bb6e9" tabindex="-1" value="">
+                  </div>
+                </div>
+
+                <div class="form-group clear">
+                  <div class="col-md-10 col-md-offset-2">
+                    <button type="submit" class="btn btn-raised btn-info" id="mc-embedded-subscribe" name="subscribe">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </fieldset>
+        </form>
+      </div>
+    <!--End mc_embed_signup-->
+      </div>
     </div>
     <!-- Contact page ends here -->
 
@@ -456,9 +496,9 @@ $("#about").waypoint(function(direction) {
        var x = document.getElementsByClassName("changeColor");
        var i;
        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "grey";
+            x[i].style.color = "black";
           }
-      }
+     }
     if (direction == "up") {
        var x = document.getElementsByClassName("changeColor");
        var i;
