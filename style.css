@@ -11,14 +11,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.navbar .active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 #homeLink {
   font-size: 20px !important ;
 }
 
-.changeColor {
-  font-size: 16px;
-  font-weight: 400;
-}
 /*navbar CSS ends here  */
 
 /* main page CSS starts here  */
@@ -52,8 +52,14 @@ body {
   margin-top: 40px;
 }
 
-#downLink {
+.downlink {
   color: white;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.downlink-dark {
+  color: black;
   font-size: 30px;
   margin-top: 25px;
 }
@@ -75,6 +81,7 @@ body {
   color: #f0f0f0;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  z-index: 1000;
 }
 
 .corner-ribbon.sticky{
@@ -134,11 +141,6 @@ body {
   legend {
     margin-left: -10px;
     margin-top: 45px;
-
-  }
-  .well {
-    margin: 300px;
-    margin-top: 150px;
   }
 /* SignUpform  CSS ends here  */
 
