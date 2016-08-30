@@ -24,9 +24,6 @@
 
     <!-- Fontawesome -->
     <script src="https://use.fontawesome.com/31e4b5bbb7.js"></script>
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css">
 
     <!-- Waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
@@ -38,14 +35,13 @@
       position: relative;
     }
 
+    /*navbar CSS starts here  */
     .navbar {background-color: transparent !important  ;}
 
     .navbar-default {
       background-color: #4d90fe;
       background-image: none;
       background-repeat: no-repeat;
-    */ hiring : #f4b400;
-
     }
 
     #homeLink {
@@ -56,13 +52,13 @@
       font-size: 16px;
       font-weight: 400;
     }
+    /*navbar CSS ends here  */
 
-
+    /* main page CSS starts here  */
     #home {
       background-color: #4d90fe;
       width: 100%;
     }
-
 
     #theBigT {
       font-size: 200px;
@@ -73,7 +69,6 @@
     #theBigTIcon {
       text-align: center;
     }
-
 
     #Timu {
       font-size: 100px;
@@ -90,50 +85,15 @@
       margin-top: 40px;
     }
 
-    #findOut {
-      color: white;
-      font-family: Roboto;
-      font-size: 20px;
-      margin-top: 50px;
-    }
-
     #downLink {
       color: white;
-
       font-size: 30px;
       margin-top: 25px;
     }
 
+  /* main page CSS ends here  */
 
-
-
-    /* .triangle {
-      height: 0px;
-      width: 0px;
-      border-top: 170px solid #f4b400;
-      border-left: 170px solid transparent;
-      position: fixed;
-      top:0px;
-      right:0px; }
-    }
-
-    .triangle span {
-
-      text-align: center;
-      color: white;
-      padding bottom: 70px;
-      bottom: 70px;
-      width: 70px:
-      padding-right: 160px;
-      padding-bottom: 100px;
-
-      left: -47px;
-      position: relative;
-      width: 93px;
-      height: 93px;
-      margin: 0px;
-    }   */
-
+  /* Corner ribbon CSS starts here  */
     .corner-ribbon{
       width: 200px;
       position: absolute;
@@ -150,7 +110,6 @@
       -webkit-transform: rotate(-45deg);
     }
 
-    /* Custom styles */
     .corner-ribbon.sticky{
       position: fixed;
     }
@@ -159,8 +118,7 @@
       box-shadow: 0 0 3px rgba(0,0,0,.3);
     }
 
-    /* Different positions */
-      .corner-ribbon.top-right{
+    .corner-ribbon.top-right{
       top: 25px;
       right: -50px;
       left: auto;
@@ -168,15 +126,11 @@
       -webkit-transform: rotate(45deg);
     }
 
+    .corner-ribbon.orange{background: #f4b400}
+   /* Corner ribbon CSS ends here  */
 
 
-    /* Colors */
-      .corner-ribbon.orange{background: #f4b400}
-
-      /*#about {
-        font-style: italic;
-      }*/
-
+   /* About page CSS starts here  */
       #about h1 {
         font-weight: 300;
         margin-top: 100px;
@@ -193,8 +147,11 @@
         padding-right: 10px;
       }
 
+    /* About page CSS ends here  */
+
+    /* SignUpform  CSS starts here  */
+
       #signUpForm {
-        /*background-color: #A2C6E9; */
         background-color: white;
         width: 100%;
       }
@@ -212,12 +169,13 @@
         margin-top: 45px;
 
       }
-
       .well {
         margin: 300px;
         margin-top: 150px;
-
       }
+    /* SignUpform  CSS ends here  */
+
+    /* News page CSS starts here  */
 
       #news h1 {
         font-weight: 300;
@@ -230,16 +188,9 @@
       .singleNews {
         font-size: 14px;
         margin-top: 55px;
-        /*border: 1px solid white;*/
         margin-left: 6px ;
         margin-right: 6px;
-        /*background-color: white;*/
-        /*padding-left: 10px;*/
-        /*padding-right: 10px;*/s
-        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-
-
-      }
+        }
 
       #news h3 {
         font-weight: 400;
@@ -248,15 +199,11 @@
         margin-bottom: 5px;
       }
 
-
-
       #news a {
         color: #4d90fe;
-
       }
 
-
-
+      /* Social media buttons CSS starts here  */
       .social-media-buttons {
         margin-top: 80px;
       }
@@ -274,7 +221,10 @@
         font-size: 60px;
         color: white;
       }
+      /* Social media buttons CSS ends here  */
+  /* News page CSS ends here  */
 
+  /* Footer CSS starts here  */
       footer {
         background-color: #4d90fe;
       }
@@ -295,6 +245,7 @@
         color: white;
       }
 
+    /* Footer CSS ends here  */
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar">
@@ -327,11 +278,9 @@
     <div id="home" class="container pageContainer">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <!-- <p id="theBigTIcon"><i class="material-icons">title</i></p> -->
           <h1 id="theBigT" class="text-center">T</h1>
           <h1 id="Timu" class="text-center bold">TIMU.IO<h1>
           <p  id="description" class="text-center">Your up to date competence profile with zero day knowledge on co-workers without the social pressure.</p>
-        <!--  <p id="findOut"class="text-center">Find out more</p> -->
           <p class="text-center"><a id="downLink"  href="#about"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
         </div>
       </div>
@@ -339,8 +288,7 @@
     <!-- First page ends -->
 
     <!-- Second page starts here -->
-      <div id="about" class="container pageContainer">
-
+    <div id="about" class="container pageContainer">
       <div class="row">
         <h1 class="title">"I am ...</h1>
       </div>
@@ -384,32 +332,11 @@
 
     <!-- Contact page starts here -->
     <div id="signUpForm" class="container pageContainer">
-
-      <!-- Begin MailChimp Signup Form
-
-      <div id="mc_embed_signup">
-      <form action="//timu.us1.list-manage.com/subscribe/post?u=275d09e73fd9d5b28ef7c67e8&amp;id=77ee1bb6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-         <div id="mc_embed_signup_scroll">
-
-      	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <!- real people should not fill this in and expect good things - do not remove this or risk form bot signups->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              <input type="text" name="b_275d09e73fd9d5b28ef7c67e8_77ee1bb6e9" tabindex="-1" value="">
-            </div>
-            <div class="clear">
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </div>
-         </div>
-      </form>
-      </div>
-
-      <!- Begin MailChimp Signup Form -->
+      <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
         <form class="form-horizontal validate" action="//timu.us1.list-manage.com/subscribe/post?u=275d09e73fd9d5b28ef7c67e8&amp;id=77ee1bb6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
           <fieldset>
             <div class="well">
-
-
               <div class="col-md-10 col-md-offset-2">
                 <legend>Subscribe to our services</legend>
               </div>
