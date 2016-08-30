@@ -126,9 +126,7 @@ body {
 /* About page CSS ends here  */
 
 /* SignUpform  CSS starts here  */
-  .well {
-    margin-top: 70px;
-  }
+
   #signUpForm {
     background-color: white;
     width: 100%;

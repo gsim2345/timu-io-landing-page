@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Timu Landing Page</title>
+    <title>Timu.io</title>
 
     <!-- link to CSS file -->
     <link href="style.css" rel="stylesheet" type="text/css"/>
@@ -48,25 +48,42 @@
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
-            <li class="navbar-item active"><a href="#home" id="homeLink">T</a></li>
-            <li class="navbar-item"><a href="#about">About</a></li>
-            <li class="navbar-item"><a href="#signUpForm">Beta</a></li>
-            <li class="navbar-item"><a href="#blog">Blog</a></li>
+            <li class="navbar-item active"><a href="#home">Timu.io</a></li>
+            <li class="navbar-item"><a href="#about">I am...</a></li>
+
           </ul>
         </div>
       </div>
     </div>
-    <div class="corner-ribbon top-right sticky olive">Beta!</div>
+    <div class="corner-ribbon top-right sticky olive">Beta soon!</div>
     <!-- Navbar ends -->
 
     <!-- First page starts here -->
     <div id="home" class="container pageContainer">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1 id="theBigT" class="text-center">T</h1>
           <h1 id="Timu" class="text-center bold">TIMU.IO<h1>
-          <p  id="description" class="text-center">Your up to date competence profile with zero day knowledge on co-workers without the social pressure.</p>
-          <p class="text-center"><a class="downlink"  href="#about"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
+          <p  id="description" class="text-center">Up to date competence profile and zero day knowledge on co-workers without the social pressure.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+          <div class="col-md-6 well">
+            <form class="form validate" action="//timu.us1.list-manage.com/subscribe/post?u=275d09e73fd9d5b28ef7c67e8&amp;id=77ee1bb6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+
+              <div class="form-group row label-floating">
+                <div class="col-md-8">
+                  <label for="mce-EMAIL" class="control-label">Secure your place!</label>
+                	<input class="form-control email" type="email" value="" name="EMAIL" id="mce-EMAIL" tabindex="-1" required>
+                  <p class="help-block">Enter your email address</p>
+                </div>
+                  <button type="submit" class="btn btn-raised btn-info" id="mc-embedded-subscribe" name="subscribe">Register</button>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_275d09e73fd9d5b28ef7c67e8_77ee1bb6e9" tabindex="-1" value=""></div>
+            </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
         </div>
       </div>
     </div>
@@ -103,8 +120,7 @@
         </div>
         <div class="col-md-4 singleQuotes">
           <blockquote>
-            <h3><center>Sounds great! <br/><br/>Take me to the Beta!</center></h3>
-            <p class="text-center"><a class="downlink-dark" href="#signUpForm"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>
+            <h3><center>Sounds great? <br/><a href="#">Register!</a></center></h3>
           </blockquote>
         </div>
         <div class="col-md-4 singleQuotes">
@@ -113,107 +129,52 @@
           </blockquote>
         </div>
       </div>
+      <div class="row text-center">
+        <ul class="social-media-buttons text-center">
+            <li><a href="https://github.com/timu-io" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://medium.com/@timu.io" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
     </div>
     <!-- Second page ends -->
-
-    <!-- Contact page starts here -->
-    <div id="signUpForm" class="container pageContainer">
-      <div class="col-md-3"></div>
-        <div class="col-md-6 well">
-        <form class="form-horizontal validate" action="//timu.us1.list-manage.com/subscribe/post?u=275d09e73fd9d5b28ef7c67e8&amp;id=77ee1bb6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-          <fieldset>
-              <div class="col-md-10 col-md-offset-2">
-                <legend>Secure your place!</legend>
-              </div>
-              <div id="mc_embed_signup_scroll">
-                <div class="form-group">
-                  <div class="col-md-8 col-md-offset-2" aria-hidden="true">
-                    	<input class="form-control email" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email" tabindex="-1" required>
-                  </div>
-                </div>
-                <div class="form-group clear">
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_275d09e73fd9d5b28ef7c67e8_77ee1bb6e9" tabindex="-1" value=""></div>
-                  <div class="col-md-10 col-md-offset-2">
-                    <button type="submit" class="btn btn-raised btn-info" id="mc-embedded-subscribe" name="subscribe">Register</button>
-                  </div>
-                </div>
-              </div>
-        </fieldset>
-        </form>
-      </div>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    <!--End mc_embed_signup-->
-      </div>
-    </div>
-    <!-- Contact page ends here -->
-
-    <!-- Blog page starts here -->
-    <div id="blog" class="container pageContainer">
-      <div class="row">
-        <h1 class="title">Recent posts...</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blogPost panel panel-default">
-            <div class="panel-heading">
-              <h3>Title</h3>
-              <h6 >2016-08-12</h6>
-            </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor. Sit amet sed. Turpis viverra sodales fusce luctus elementum potenti vitae morbi sapien vitae malesuada duis etiam sagittis. Diam tempus arcu sed dolor quis. Quis suspendisse sapien.</p>
-              <a href="#">more...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blogPost panel panel-default">
-            <div class="panel-heading">
-              <h3>Title</h3>
-              <h6 >2016-08-12</h6>
-            </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor. Sit amet sed. Turpis viverra sodales fusce luctus elementum potenti vitae morbi sapien vitae malesuada duis etiam sagittis. Diam tempus arcu sed dolor quis. Quis suspendisse sapien.</p>
-              <a href="#">more...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blogPost panel panel-default">
-            <div class="panel-heading">
-              <h3>Title</h3>
-              <h6 >2016-08-12</h6>
-            </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor. Sit amet sed. Turpis viverra sodales fusce luctus elementum potenti vitae morbi sapien vitae malesuada duis etiam sagittis. Diam tempus arcu sed dolor quis. Quis suspendisse sapien.</p>
-              <a href="#">more...</a>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="row text-center">
-      <ul class="social-media-buttons text-center">
-          <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/timu-io" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="https://medium.com/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- Blog page ends here -->
 
   <!-- Footer starts here -->
   <footer id="stickyFooter" class="footer">
     <div class="container-fluid">
-      <p><span> © 2016 - Timu.io</span>  -  <span><a href="#"> Privacy </a></span>    -   <span><a href="#"> License </a></span>   -   <span><a href="#signUpForm"> Beta </a></span>   -   <span><a href="#"> Investors </a></span>   -  <span><a href="#blog">  Blog </a></span>  </p>
+      <p><span> © 2016 - <a href="#">Timu.io</a></span>  -  <span><a href="#" data-toggle="modal" data-target="#complete-dialog">Privacy</a></span>
+ </p>
     </div>
   </footer>
 
   <!-- Footer ends here -->
 
-
   <!-- link to js file -->
   <script src="script.js"></script>
+  <div id="complete-dialog" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">DISCLAIMER</h4>
+      </div>
+      <div class="modal-body">
+        <p>Timu.io is an early stage startup. At this point the service hasn’t been officially released. It is not generating any revenue for the authors. Both the technical and the legal areas including copyright and license are under heavy development.</p>
+        <p>COPYRIGHT</p>
+        <p>The basic intention is not breaking the law and providing all the necessary transparency and legal background to go official. If you feel affected by any of the aspect of the service or you are concerned on any legal or copyright topic, feel free to send your feedback, We will respond and resolve the issue a.s.a.p.</p>
+        <p>The stock photos are from deathtothestockphoto.com</p>
+        <p>PRIVACY</p>
+        <p>The service using different distributed solutions from different cloud providers (Mailchimp, Google, Amazon, Microsoft etc.). Timu.io has no designated feature today that collects personal data, however the underlaying services might do. This implies Timu.io's policy is the union of these policies.</p>
+        <p>EARLY ADOPTERS</p>
+        <p>You might get access to the service as early-adopter or tester. There is no warranty at this stage on that bugs or malfunctions in the service. The project is in an unofficial development phase, therefor there is no obligation at getting any compensation for any real or presumed damages related to using the it.</p>
+        <p>FINAL NOTE</p>
+        <p>You can see this is not a usual legal note form a hand of an attorney. I think the intension is important.We are in an early stage – no revenue involved – if you are using the service there are no obligations – We are doing my best on your privacy and your copyright. Please also respect ours.</p>
+        <p><a href="mailto:privacy@timu.io">privacy@timu.io</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
