@@ -146,9 +146,9 @@ body {
   }
 /* SignUpform  CSS ends here  */
 
-/* News page CSS starts here  */
+/* Blog page CSS starts here  */
 
-  #news h1 {
+  #blog h1 {
     font-weight: 300;
     margin-top: 90px;
     font-size: 40px;
@@ -163,14 +163,14 @@ body {
     margin-right: 6px;
     }
 
-  #news h3 {
+  #blog h3 {
     font-weight: 400;
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
-  #news a {
+  #blog a {
     color: #4d90fe;
   }
 
@@ -193,7 +193,7 @@ body {
     color: white;
   }
   /* Social media buttons CSS ends here  */
-/* News page CSS ends here  */
+/* Blog page CSS ends here  */
 
 /* Footer CSS starts here  */
   footer {
