@@ -77,7 +77,7 @@ body {
   letter-spacing: 1px;
   font-family: Roboto;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 300;
   color: #f0f0f0;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -101,6 +101,8 @@ body {
 }
 
 .corner-ribbon.orange{background: #f4b400}
+.corner-ribbon.olive{background: #009688}
+
 /* Corner ribbon CSS ends here  */
 
 
