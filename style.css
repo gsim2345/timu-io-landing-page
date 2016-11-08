@@ -1,221 +1,251 @@
 body {
-  position: relative;
+    position: relative;
 }
 
+
 /*navbar CSS starts here  */
-.navbar {background-color: transparent !important  ;}
+
+.navbar {
+    background-color: transparent !important;
+}
 
 .navbar-default {
-  background-color: #4d90fe;
-  background-image: none;
-  background-repeat: no-repeat;
+    background-color: #4d90fe;
+    background-image: none;
+    background-repeat: no-repeat;
 }
 
 .navbar .active {
-  background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #homeLink {
-  font-size: 20px !important ;
+    font-size: 20px !important;
 }
+
 
 /*navbar CSS ends here  */
 
+
 /* main page CSS starts here  */
+
 #home {
-  background-color: #4d90fe;
-  width: 100%;
+    background-color: #4d90fe;
+    width: 100%;
 }
 
 #theBigT {
-  font-size: 200px;
-  color: white;
-  margin-top: 80px;
+    font-size: 200px;
+    color: white;
+    margin-top: 80px;
 }
 
 #theBigTIcon {
-  text-align: center;
+    text-align: center;
 }
 
 #Timu {
-  font-size: 100px;
-  color: white;
-  margin-top: 20px;
-  font-family: Roboto;
-  font-weight: 400;
+    font-size: 100px;
+    color: white;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-weight: 400;
 }
 
 #description {
-  color: white;
-  font-family: Roboto;
-  font-size: 32px;
-  margin-top: 40px;
+    color: white;
+    font-family: Roboto;
+    font-size: 32px;
+    margin-top: 40px;
 }
 
 .downlink {
-  color: white;
-  font-size: 30px;
-  margin-top: 25px;
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
 }
 
 .downlink-dark {
-  color: black;
-  font-size: 30px;
-  margin-top: 25px;
+    color: black;
+    font-size: 30px;
+    margin-top: 25px;
 }
+
 
 /* main page CSS ends here  */
 
+
 /* Corner ribbon CSS starts here  */
-.corner-ribbon{
-  width: 200px;
-  position: absolute;
-  top: 25px;
-  left: -50px;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1px;
-  font-family: Roboto;
-  font-size: 23px;
-  font-weight: 300;
-  color: #f0f0f0;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  z-index: 1000;
+
+.corner-ribbon {
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 300;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 1000;
 }
 
-.corner-ribbon.sticky{
-  position: fixed;
+.corner-ribbon.sticky {
+    position: fixed;
 }
 
- .corner-ribbon.shadow{
-  box-shadow: 0 0 3px rgba(0,0,0,.3);
+.corner-ribbon.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
 }
 
-.corner-ribbon.top-right{
-  top: 25px;
-  right: -50px;
-  left: auto;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.corner-ribbon.top-right {
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
-.corner-ribbon.orange{background: #f4b400}
-.corner-ribbon.olive{background: #009688}
+.corner-ribbon.orange {
+    background: #f4b400
+}
+
+.corner-ribbon.olive {
+    background: #009688
+}
+
 
 /* Corner ribbon CSS ends here  */
 
 
 /* About page CSS starts here  */
-  #about h1 {
+
+#about h1 {
     font-weight: 300;
     margin-top: 60px;
     font-size: 40px;
     margin-left: 15px;
-  }
+}
 
-  .singleQuotes {
+.singleQuotes {
     font-size: 18px;
     margin-top: 70px;
     margin-right: 0px;
     margin-left: 0px;
     padding-left: 10px;
     padding-right: 10px;
-  }
+}
+
 
 /* About page CSS ends here  */
 
+
 /* SignUpform  CSS starts here  */
-  .well {
+
+.well {
     margin-top: 70px;
-  }
-  #signUpForm {
+}
+
+#signUpForm {
     background-color: white;
     width: 100%;
-  }
+}
 
-  #signUpForm p {
+#signUpForm p {
     margin-top: 100px;
     text-align: center;
     font-size: 40px;
     border: 5px solid #4d90fe;
+}
 
-  }
-
-  legend {
+legend {
     margin-left: -10px;
     margin-top: 45px;
-  }
+}
+
+
 /* SignUpform  CSS ends here  */
+
 
 /* Blog page CSS starts here  */
 
-  #blog h1 {
+#blog h1 {
     font-weight: 300;
     margin-top: 90px;
     font-size: 40px;
-
     margin-left: 20px;
-  }
+}
 
-  .blogPost {
+.blogPost {
     font-size: 14px;
     margin-top: 55px;
-    margin-left: 6px ;
+    margin-left: 6px;
     margin-right: 6px;
-    }
+}
 
-  #blog h3 {
+#blog h3 {
     font-weight: 400;
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-  }
+}
 
-  #blog a {
+#blog a {
     color: #4d90fe;
-  }
+}
 
-  /* Social media buttons CSS starts here  */
-  .social-media-buttons {
+
+/* Social media buttons CSS starts here  */
+
+.social-media-buttons {
     margin-top: 80px;
-  }
+}
 
-  .social-media-buttons li {
+.social-media-buttons li {
     padding-right: 5px;
     text-align: center;
     display: inline;
     margin-left: 15px;
     margin-right: 15px;
+}
 
-  }
-
-  .social-media-buttons li i {
+.social-media-buttons li i {
     font-size: 60px;
     color: white;
-  }
-  /* Social media buttons CSS ends here  */
+}
+
+
+/* Social media buttons CSS ends here  */
+
+
 /* Blog page CSS ends here  */
 
-/* Footer CSS starts here  */
-  footer {
-    background-color: #4d90fe;
-  }
 
-  footer p {
+/* Footer CSS starts here  */
+
+footer {
+    background-color: #4d90fe;
+}
+
+footer p {
     color: white;
     font-size: 15px;
     font-weight: 300;
     margin: 12px;
-  }
+}
 
-  footer p span {
+footer p span {
     margin-left: 15px;
     margin-right: 15px;
-  }
+}
 
-  footer p span a {
+footer p span a {
     color: white;
-  }
+}
+
 
 /* Footer CSS ends here  */
